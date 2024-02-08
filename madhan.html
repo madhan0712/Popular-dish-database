@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 10px;
+  text-align: center;
+  background: rgb(7, 197, 211);
+}
+
+.header h1 {
+  font-size: 30px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  width:auto;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 30px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+  section {
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 20px;
+    width: 300px;
+}
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Top dishes in India</h1>
+</div>
+
+<div class="topnav">
+  <a href="#Cb">Chicken Biriyani</a>
+  <a href="#tc">Tandoori Chicken</a>
+  <a href="#Rogan Josh">Rogan Josh</a>
+  <a href="#Dal makhani">Dal makhani</a>
+</div>
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Chicken Biriyani</h2>
+      <img src="cb.jpg"  width="500px">
+      <p>Simply put, biryani is a spiced mix of meat and rice, traditionally cooked over an open fire in a leather pot. It is combined in different ways with a variety of components to create a number of highly tasty and unique flavor combinations. The word “biryani” itself comes from the word “birian,” a Persian term which translates to “fried before cooking.” Indeed, the roots of this dish have been traced by notable historians to modern day Persia, with appearances in notes under various names as early as 2 CE. The biryani recipe was then much simplified in order to keep it viable during travel.
+
+        Once the dish reached India, it blossomed into something entirely new. The story goes that Mumtaz Mahal, a Queen of Shah Jahan, visited an army barrack and found the soldiers there to be heavily undernourished. She demanded the barrack’s cook provide the soldiers with a dish that was nutritious and had all the meat, rice, and spices needed to restore their energy. According to legend, this is how the dish first came to India. As various regions across Southern Asia adopted the recipe, it grew and changed to express cultures’ values; leading to the diverse selection of biryani dishes that exist today</p>
+    </div>
+    <div class="card">
+      <h2>Tandoori Chicken</h2>
+      <img src="tc.jpg" width="450px">
+      <p>About this dish</p>
+      <p>The only dish that’s probably more popular than this one would be chicken tikka, but even then it’s a close call. Tandoori chicken’s juicy consistency and mouthwatering spices make it a classic that never really goes out of style and always manages to make new fans with each serving.
+
+        If you are new to Indian food, you may want to start with tandoori chicken for its universal appeal. The chicken is marinated in ingredients such as yogurt, ginger, garlic, and herbs, and then baked in a clay oven, creating a juicy and delicious flavor. Seafood lovers often opt for shrimp or fish tandoori, and those who are indecisive can find comfort in the tandoori mixed grill, combining chicken, shrimp, fish, and lamb into one savory meal</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>Rogan Josh</h2>
+      <img src="rj.jpg" width="300px">
+      <p>Rogan josh is a staple from Kashmir (North India). Rogan Josh comprises braised sheep meat cooked with sauce. For the most part, Indian cooks make this sauce from seared onions, yogurt, garlic, ginger, and sweet-smelling flavours.
+
+        Known for its marvellous red colour, a good rogan josh uses ample measures of dried Kashmiri chillies.
+        The majority of the zestiness of Rogan Josh comes from the delicious fragrance of the dish. When in Kashmir, rogan josh with steaming basmati rice is a must-try!</p>
+    </div>
+    <div class="card">
+      <h2>Dal makhani</h2>
+      <img src="dm.jpg" width="300px">
+      <p>Most foodies will have heard of or tasted dal, but there’s nothing quite like tasting the original dish in the country where it originated from. Dal is the Hindi word for lentils, and this soup-like delicacy is made by stewing small black lentils for hours on end.
+         Whilst there are  many different varieties of this lentil dish, dal makhani is in a league of its own. It’s considered the best of the best, and is reserved for big events like wedding celebrations. With makhani meaning ‘buttery’ in Hindi, there’s no prizes for guessing how rich and creamy this Indian classic tastes. 
+         Head to Punjab, in India’s north, to taste the real deal.
+      </p>
+    </div>
+    <div class="card">
+      <h3>Follow this page for more content</h3> 
+      <p>Google-Foodholyic<br>
+         <br> 
+         ig-@foodholyicoff_
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Created by madhan</h2>
+</div>
+
+</body>
+</html>
+
+
